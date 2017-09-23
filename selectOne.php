@@ -11,7 +11,11 @@ $query_get_one->execute();
 
 $result = $query_get_one->get_result()->fetch_assoc();
 
-echo $result['username'];
+$person['person']=$result;
+
+echo json_encode($person);
+
+//echo $result['username'];
 
 
 
